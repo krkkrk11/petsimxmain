@@ -12,7 +12,7 @@ spawn(function()
 				        if not Library.WorldCmds.Load("Diamond Mine") then return end
 				    end
 				    wait(2)
-				    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(9020.01953125, -10.271393775939941, 2508.555908203125)
+				    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(9020.01953125, 0, 2508.555908203125)
 				elseif Orange <= 100 and Library.WorldCmds.Get() ~= "Fantasy" and Library.WorldCmds.Get() ~= "Spawn" then
 				    if Library.WorldCmds.Get() ~= "Pixel" then
 				        if not Library.WorldCmds.Load("Pixel") then return end
