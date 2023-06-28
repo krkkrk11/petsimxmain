@@ -9,21 +9,18 @@ spawn(function()
 			if Library.WorldCmds.Get() ~= "Fantasy" and Library.WorldCmds.Get() ~= "Spawn" then
 				if Orange >= 100 and Library.WorldCmds.Get() ~= "Fantasy" and Library.WorldCmds.Get() ~= "Spawn" then
 				    if Library.WorldCmds.Get() ~= "Diamond Mine" then
-				        if not Library.WorldCmds.Load("Diamond Mine") then return end
+					wait(5)
+				        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(9020.01953125, 59, 2508.555908203125)
 				    end
-				    wait(2)
-				    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(9020.01953125, 59, 2508.555908203125)
 				elseif Orange <= 100 and Library.WorldCmds.Get() ~= "Fantasy" and Library.WorldCmds.Get() ~= "Spawn" then
 				    if Library.WorldCmds.Get() ~= "Pixel" then
-				        if not Library.WorldCmds.Load("Pixel") then return end
+					wait(5)
+				        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3897, -16, 2440)
 				    end
-				    wait(2)
-				    repeat wait()
-				    	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3897, -16, 2440)
-				    until Orange == 200
 				end
 			--game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3100, 96, 137)
 			elseif Library.WorldCmds.Get() == "Fantasy" then
+		                wait(5)
 				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3100, 96, 137)
 			end
 	   	end)
