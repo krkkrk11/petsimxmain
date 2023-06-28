@@ -1,9 +1,9 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafacasari/roblox-scripts/main/psx.lua", true))()
 local Library = require(game:GetService("ReplicatedStorage").Library)
-local Orange = tonumber(game.Players.localPlayer.PlayerGui.Main.Boosts.Orange.TimeLeft.Text:split("x")[2])
 wait(2)
 spawn(function()
     while wait(1) do
+	Orange = tonumber(game.Players.localPlayer.PlayerGui.Main.Boosts.Orange.TimeLeft.Text:split("x")[2])
     	pcall(function()
     		print(Library.WorldCmds.Get())
 			if Library.WorldCmds.Get() ~= "Fantasy" and Library.WorldCmds.Get() ~= "Spawn" then
