@@ -5,7 +5,6 @@ spawn(function()
     while wait(1) do
 	Orange = tonumber(game.Players.localPlayer.PlayerGui.Main.Boosts.Orange.TimeLeft.Text:split("x")[2])
     	pcall(function()
-    		print(Library.WorldCmds.Get())
 			if Library.WorldCmds.Get() ~= "Fantasy" and Library.WorldCmds.Get() ~= "Spawn" then
 				if Orange >= 100 and Library.WorldCmds.Get() ~= "Fantasy" and Library.WorldCmds.Get() ~= "Spawn" then
 				    if Library.WorldCmds.Get() ~= "Diamond Mine" then
@@ -21,8 +20,8 @@ spawn(function()
 			--game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3100, 96, 137)
 			elseif Library.WorldCmds.Get() == "Fantasy" then
 		                wait(5)
-				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3100, 96, 137)
+			        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3100, 96, 137)
 			end
-	   	end)
+	end)
     end
 end)
